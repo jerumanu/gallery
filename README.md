@@ -1,4 +1,4 @@
-:satisfied:
+
 ## My-Gallery
 #### This project help users view images available with category and location, Monday JAN 9th 2021
 #### By **EMMANUEL CHERU**
