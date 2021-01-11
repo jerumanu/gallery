@@ -51,7 +51,7 @@ searching button is not well responsive.Solution for this,Kindly view the image 
 * POSTGRESS
 
 ## Support and contact details
-contact me @ aokomercyline34@gmail.com
+contact me @ emmanueljeru200@gmail.com
 
 ### License
 The project is under[MIT license](/blob/master/LICENSE)
