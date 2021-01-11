@@ -64,7 +64,7 @@ class CategoryTestClass(TestCase):
         category = Category.objects.all()
         self.assertTrue(len(category) == 0)
         from django.test import TestCase
-from .models import *
+
 # Create your tests here.
 class ImageTestClass(TestCase):
     def setup(self):
