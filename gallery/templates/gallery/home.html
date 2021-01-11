@@ -8,14 +8,17 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <div class="row"> -->
+        <div class="container-fluid>
         <div class="col-md-">
             <!-- Looping through images   -->
             {% for image in images %}
             <!--Display all images  -->
-            <div class="col-md-4" data-toggle="modal" data-target="#{{image.id}}">
-                <div class="card">
-                <img src="{{image.image.url}}" alt="{{image.name}}" class="card-img" height="400 px" width="400 px" >
-                    </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 thumbnails">
+                <div class="card-body">
+                    <img src="{{image.image.url}}" data-toggle="modal"data-target="#{{image.id}}" alt="image"  height="400 px" width="400 px">
+                    <br>
+                    <hr>
+                </div>
             </div>
             <div class="modal fade " id="{{image.id}}" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -51,5 +54,6 @@
             {% endfor %}
         </div>
     </div>
+</div>
 </div>
 {% endblock %}
