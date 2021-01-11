@@ -1,0 +1,46 @@
+
+{% load bootstrap3 %}
+
+{% load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    {% if title %}
+    <title>Gallery App - {{title}}</title>
+    {% else %}
+    <title> Gallery App </title>
+    {% endif %}
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    {% endblock %}
+</head>
+
+<body>
+    {% include "navbar.html" %}
+    {% block content %}
+    {%endblock%}
+    <footer class="footer mt-4">
+        <div class="social-icons">
+            <i class="fa fa-2x fa-facebook"></i>
+            <i class="fa fa-2x fa-twitter"></i>
+            <i class="fa fa-2x fa-instagram"></i>
+        </div>
+        <p class="text-center pt-2">Copyright &copy; 2020 Design by Manu Jeru</p>
+    </footer>
+    <footer class="page-footer font-small blue">
+        <div class="footer">
+            <p class="footer-copyright text-center py-3">{{date|date:"l d-F Y"}}</p>
+        </div>
+    </footer>
+    {% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {% bootstrap_javascript %}
+    {% endblock %}
+</body>
+
+</html>
